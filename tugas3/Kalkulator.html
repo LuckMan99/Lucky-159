@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Container">
+      <h1>Kalkulator</h1>
+      <div class="Kalkulator">
+        <div class="input-fields">
+          <input type="number" id="bilangan1" placeholder="Bilangan 1" />
+          <input type="number" id="bilangan2" placeholder="Bilangan 2" />
+        </div>
+        <div class="button">
+          <button onclick="tambah()">Tambah</button>
+          <button onclick="kurang()">Kurang</button>
+        </div>
+        <div class="hasil">
+          <p>Hasil : <span id="Hasil"></span></p>
+        </div>
+        <script>
+          function tambah() {
+            bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            hasil = bilangan1 + bilangan2;
+            document.getElementById("Hasil").textContent = hasil;
+          }
+
+          function kurang() {
+            bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            hasil = bilangan1 - bilangan2;
+            document.getElementById("Hasil").textContent = hasil;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

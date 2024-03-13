@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  height: 60%;
+  border: 2px solid black;
+  gap: 1px;
+}
